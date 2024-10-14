@@ -73,3 +73,14 @@ __Монолитная модульная архитектура__
 | POST | /api/users/register | json объект с ```username```, ```password``` | - | json объект с ```userId```, ```token``` | регистрация нового пользователя |
 | POST | /api/users/login | json объект с ```username```, ```password``` | - | json объект с ```userId```, ```token``` | аутентификация пользователя |
 | GET | /api/users/{userId} | - | ```Authorization: Bearer {token}``` | json объект с информацией о пользователе | возвращает иформацию о пользователе |
+
+## Диаграммы
+
+### Диаграмма системного контекста
+[!system context](https://github.com/is-WatchHub/WatchHub-Doc/blob/main/diagrams/WatchHub-Doc.jpg)
+
+### Диаграмма контейнеров
+[!container](https://github.com/is-WatchHub/WatchHub-Doc/blob/main/diagrams/WatchHub-Doc1.jpg)
+
+### Диаграмма компонентов для бэкенда
+[!backend components](https://github.com/is-WatchHub/WatchHub-Doc/blob/main/diagrams/WatchHub-Doc2.jpg)
