@@ -77,10 +77,10 @@ __Монолитная модульная архитектура__
 ## Диаграммы
 
 ### Диаграмма системного контекста
-[system context](https://github.com/is-WatchHub/WatchHub-Doc/blob/main/diagrams/WatchHub-Doc.jpg)
+![system context](https://github.com/is-WatchHub/WatchHub-Doc/blob/main/diagrams/WatchHub-Doc.jpg)
 
 ### Диаграмма контейнеров
-[container](https://github.com/is-WatchHub/WatchHub-Doc/blob/main/diagrams/WatchHub-Doc1.jpg)
+![container](https://github.com/is-WatchHub/WatchHub-Doc/blob/main/diagrams/WatchHub-Doc1.jpg)
 
 ### Диаграмма компонентов для бэкенда
-[backend components](https://github.com/is-WatchHub/WatchHub-Doc/blob/main/diagrams/WatchHub-Doc2.jpg)
+![backend components](https://github.com/is-WatchHub/WatchHub-Doc/blob/main/diagrams/WatchHub-Doc2.jpg)
