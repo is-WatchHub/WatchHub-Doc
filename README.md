@@ -79,8 +79,8 @@ __Монолитная модульная архитектура__
 | GET | /api/movies/{id} | - | ```Authorization: Bearer {token}``` | json объект фильма | возвращает данные о конкретном фильме |
 | GET | /api/movies/random | Параметры запроса: ```genre```  | ```Authorization: Bearer {token}``` | json объект фильма | возвращает случайный фильм по заданному жанру |
 | POST | /api/movies | json объект с данными о новом фильме | ```Authorization: Bearer {token}```(только для администраторов) | json объект c ```movieId``` | добавляем новый фильм в систему |
-| POST | /api/users/register | json объект с ```username```, ```password``` | - | json объект с ```userId```, ```token``` | регистрация нового пользователя |
-| POST | /api/users/login | json объект с ```username```, ```password``` | - | json объект с ```userId```, ```token``` | аутентификация пользователя |
+| POST | /api/users | json объект с ```username```, ```password``` | - | json объект с ```userId```, ```token``` | регистрация нового пользователя |
+| POST | /api/auth | json объект с ```username```, ```password``` | - | json объект с ```userId```, ```token``` | аутентификация пользователя |
 | GET | /api/users/{userId} | - | ```Authorization: Bearer {token}``` | json объект с информацией о пользователе | возвращает информацию о пользователе |
 
 ## Диаграммы
