@@ -74,21 +74,21 @@ __Монолитная модульная архитектура__
 ## Описание Solution
 Solution состоит из нескольких проектов, организованных по слоям и модулям, которые позволяют обеспечить четкое разделение ответственности между проектами и повысить гибкость и масштабируемость:
 
-• Слой Domain: проекты этого слоя (UserManagementDomain, IntegrationDomain, MoviesDomain) содержат модели данных и не имеют зависимостей от других проектов.
-• Слой Application: проекты этого слоя (UserManagementApplication, IntegrationApplication, MoviesApplication) отвечают за бизнес-логику и могут ссылаться только на проекты Domain в рамках одного модуля.
-• Слой Infrastructure: проект этого слоя (Infrastructure) отвечает за внешние зависимости и их реализации, а также за тестирование - может ссылаться только на проекты Application.
-• Слой Presentation: проект этого слоя (Presentation) отвечает за взаимодействие с клиентской частью и может ссылаться на проекты Application и Infrastructure.
++ Слой Domain: проекты этого слоя (UserManagementDomain, IntegrationDomain, MoviesDomain) содержат модели данных и не имеют зависимостей от других проектов.
++ Слой Application: проекты этого слоя (UserManagementApplication, IntegrationApplication, MoviesApplication) отвечают за бизнес-логику и могут ссылаться только на проекты Domain в рамках одного модуля.
++ Слой Infrastructure: проект этого слоя (Infrastructure) отвечает за внешние зависимости и их реализации, а также за тестирование - может ссылаться только на проекты Application.
++ Слой Presentation: проект этого слоя (Presentation) отвечает за взаимодействие с клиентской частью и может ссылаться на проекты Application и Infrastructure.
 
 В Solution представлены следующие проекты:
 
-• Presentation: проект, относящийся ко всем модулям, отвечает за взаимодействие с клиентской частью.
-• Infrastructure: проект, относящийся ко всем модулям, отвечает за имплементацию репозиториев.
-• UserManagementApplication: проект, относящийся к User Management Module, содержит бизнес-логику.
-• IntegrationApplication: проект, относящийся к Integration Module, содержит бизнес-логику.
-• MoviesApplication: проект, относящийся к Movies Module, содержит бизнес-логику.
-• UserManagementDomain: проект, относящийся к User Management Module, содержит модели данных.
-• IntegrationDomain: проект, относящийся к Integration Module, содержит модели данных.
-• MoviesDomain: проект, относящийся к Movies Module, содержит модели данных. 
++ Presentation: проект, относящийся ко всем модулям, отвечает за взаимодействие с клиентской частью.
++ Infrastructure: проект, относящийся ко всем модулям, отвечает за имплементацию репозиториев.
++ UserManagementApplication: проект, относящийся к User Management Module, содержит бизнес-логику.
++ IntegrationApplication: проект, относящийся к Integration Module, содержит бизнес-логику.
++ MoviesApplication: проект, относящийся к Movies Module, содержит бизнес-логику.
++ UserManagementDomain: проект, относящийся к User Management Module, содержит модели данных.
++ IntegrationDomain: проект, относящийся к Integration Module, содержит модели данных.
++ MoviesDomain: проект, относящийся к Movies Module, содержит модели данных. 
 
 ## Протокол передачи данных
 
