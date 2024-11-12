@@ -60,12 +60,13 @@ __Монолитная модульная архитектура__
 Модули:
 * Модуль управления пользователями (User Management Module)
     + Отвечает за работу с пользовательскими данными.
-![Диаграмма классов](https://github.com/is-WatchHub/WatchHub-Doc/blob/main/diagrams/UserManagementDomain.png)
+<p align="center"><img src=https://github.com/is-WatchHub/WatchHub-Doc/blob/main/diagrams/UserManagementDomain.png></a></p>
 * Модуль интеграции с партнерскими сервисами (Integration Module)
     + Обеспечивает взаимодействие с внешними API и сервисами для получения дополнительной информации о фильмах, таких как рейтинги, данные об актерах, и похожие фильмы.
+<p align="center"><img src=https://github.com/is-WatchHub/WatchHub-Doc/blob/main/diagrams/IntegrationDomain.png></a></p>
 * Модуль управления фильмами (Movies Module)
     + Управляет операциями с сущностями фильмов. Содержит логику для создания и просмотра информации о фильмах.
-![Диаграмма классов](https://github.com/is-WatchHub/WatchHub-Doc/blob/main/diagrams/MoviesDomain.png)
+<p align="center"><img src=https://github.com/is-WatchHub/WatchHub-Doc/blob/main/diagrams/MoviesDomain.png></a></p>
 
 Примечание:
 База данных одна но разделена на модули по такой же логики, при этом сущности из одного модуля не могут быть связаны с сущностями из другого, связь возможно только через указание ID.
