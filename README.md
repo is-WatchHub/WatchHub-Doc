@@ -59,16 +59,41 @@ __Монолитная модульная архитектура__
 Модули:
 * Модуль управления пользователями (User Management Module)
     + Отвечает за работу с пользовательскими данными.
-![Диаграмма классов](https://github.com/is-WatchHub/WatchHub-Doc/blob/main/diagrams/UserManagementDomain.png)
+
+<p align="center"><img src=https://github.com/is-WatchHub/WatchHub-Doc/blob/main/diagrams/UserManagementDomain.png></a></p>
+
 * Модуль интеграции с партнерскими сервисами (Integration Module)
     + Обеспечивает взаимодействие с внешними API и сервисами для получения дополнительной информации о фильмах, таких как рейтинги, данные об актерах, и похожие фильмы.
+
+<p align="center"><img src=https://github.com/is-WatchHub/WatchHub-Doc/blob/main/diagrams/IntegrationDomain.png></a></p>
+
 * Модуль управления фильмами (Movies Module)
     + Управляет операциями с сущностями фильмов. Содержит логику для создания и просмотра информации о фильмах.
-![Диаграмма классов](https://github.com/is-WatchHub/WatchHub-Doc/blob/main/diagrams/MoviesDomain.png)
+
+<p align="center"><img src=https://github.com/is-WatchHub/WatchHub-Doc/blob/main/diagrams/MoviesDomain.png></a></p>
 
 Примечание:
 База данных одна но разделена на модули по такой же логики, при этом сущности из одного модуля не могут быть связаны с сущностями из другого, связь возможно только через указание ID.
 Каждый модуль может реализовывать свою архитектуру, т.е. архитектура всего сервиса монолитная модульная, но архитектура отдельно взятого модуля может различаться.
+
+## Описание Solution
+Solution состоит из нескольких проектов, организованных по слоям и модулям, которые позволяют обеспечить четкое разделение ответственности между проектами и повысить гибкость и масштабируемость:
+
++ Слой Domain: проекты этого слоя (UserManagementDomain, IntegrationDomain, MoviesDomain) содержат модели данных и не имеют зависимостей от других проектов.
++ Слой Application: проекты этого слоя (UserManagementApplication, IntegrationApplication, MoviesApplication) отвечают за бизнес-логику и могут ссылаться только на проекты Domain в рамках одного модуля.
++ Слой Infrastructure: проект этого слоя (Infrastructure) отвечает за внешние зависимости и их реализации, а также за тестирование - может ссылаться только на проекты Application.
++ Слой Presentation: проект этого слоя (Presentation) отвечает за взаимодействие с клиентской частью и может ссылаться на проекты Application и Infrastructure.
+
+В Solution представлены следующие проекты:
+
++ Presentation: проект, относящийся ко всем модулям, отвечает за взаимодействие с клиентской частью.
++ Infrastructure: проект, относящийся ко всем модулям, отвечает за имплементацию репозиториев.
++ UserManagementApplication: проект, относящийся к User Management Module, содержит бизнес-логику.
++ IntegrationApplication: проект, относящийся к Integration Module, содержит бизнес-логику.
++ MoviesApplication: проект, относящийся к Movies Module, содержит бизнес-логику.
++ UserManagementDomain: проект, относящийся к User Management Module, содержит модели данных.
++ IntegrationDomain: проект, относящийся к Integration Module, содержит модели данных.
++ MoviesDomain: проект, относящийся к Movies Module, содержит модели данных. 
 
 ## Протокол передачи данных
 
