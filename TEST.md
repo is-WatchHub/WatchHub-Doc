@@ -23,3 +23,18 @@
 ### Сервис взаимодействия с партнерами
 * IntegrationServiceTests (тестирование методов сервиса IntegrationServiceTests)
   * GetMovieInformationByMovieIdAsync_ValidId_CallsCollectMovieInformation - Тест проверяет, что алгоритма получения информации о фильме работает корректно
+
+## Ручное тестирование
+
+### Регистрация
+1) 
+<p align="center"><img src=https://github.com/is-WatchHub/WatchHub-Doc/blob/main/diagrams/UserManagementDomain.png></a></p>
+
+### Авторизация
+
+### Фильмы для неавторизованного пользователя
+
+### Фильмы для авторизованного пользователя
+
+### Профиль пользователя
+
