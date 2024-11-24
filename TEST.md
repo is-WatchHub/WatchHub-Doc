@@ -11,8 +11,6 @@
 * GetInfoByIdAsync_ShouldReturnMovieInfo_WhenMovieExists: Тест проверяет, что метод GetInfoByIdAsync возвращает информацию о фильме в виде объекта AdditionalMovieInfoResponseDto, если фильм с заданным id существует в репозитории.
 * GetInfoByIdAsync_ShouldReturnNull_WhenMovieDoesNotExist: Тест проверяет, что метод GetInfoByIdAsync возвращает null, если фильм с заданным id отсутствует в репозитории.
 * GetByFilterAsync_ShouldReturnMoviesByGenre_WhenGenreIsSpecified: Тест проверяет, что при передаче жанра возвращается список фильмов только этого жанра.
-* GetRandomByGenreAsync_ShouldReturnRandomMovie_WhenMoviesExistForGenre: Тест проверяет, что метод GetRandomByGenreAsync возвращает случайный фильм указанного жанра.
-* GetRandomByGenreAsync_ShouldThrowException_WhenNoMoviesExistForGenre: Тест проверяет, что при отсутствии фильмов для указанного жанра выбрасывается исключение.
 
 ### Сервис пользователей
 * AuthenticationServiceTests (тестирование методов сервиса AuthenticationService)
